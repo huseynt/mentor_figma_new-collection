@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+// ----------------- header ---------------------
+.header {
+    width: 100%;
+    display: flex;
+    background-color: #252B42;
+    color: #fff;
+
+    &__up {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #252B42;
+        z-index: 2;
+
+        &-left {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 0 50px;
+
+            &-phone {
+                margin: 0 5px;
+                display: flex;
+                align-items: center;
+
+                &-icon {
+                    margin-right: 5px;
+                    &-img {
+                        width: 16px;
+                        margin-top: 4px;
+                    }
+                }
+
+                &-number {
+                    
+                }
+            }
+
+            &-mail {
+                margin: 0 5px;
+                display: flex;
+                align-items: center;
+                
+                &-icon {
+                    margin-right: 5px;
+                    &-img {
+                        width: 16px;
+                        margin-top: 4px;
+                    }
+                }
+
+                &-paragraph {
+
+                }
+            }
+        }
+
+    
+
+        &-right {
+            display: flex;
+            align-items: center;
+            margin: 0 70px 0 0;
+
+            &-paragraph {
+                margin-right: 5px;
+            }
+
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 4px;
+
+                &-item {
+                    padding: 0 5px;
+
+                    &-img {
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    // down --------
+    &__down {
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 45px;
+        left: 0px;
+        z-index: 2;
+    
+        &-left {
+            margin: 0 0 0 50px;
+            padding: 0;
+    
+            &-head {
+                margin: 0;
+                padding: 0;
+                font-size: 24px;
+                font-weight: 700;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    
+        &-center {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            
+            &-item {
+                padding: 5px 8px 2px;
+                &-link {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    
+        &-right {
+            display: flex;
+            padding: 5px 8px 2px;
+            margin: 0 50px 0 0;
+    
+            &-login {
+                display: flex;
+                justify-content: space-between;
+                
+                &-icon {
+                    margin-right: 5px;
+                }
+    
+                &-link {
+                    text-decoration: none;
+                    color: #23A6F0;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+    
+            &-list {
+                display: flex;
+                margin: 0 0 0 15px;
+                padding: 0;
+                list-style: none;
+                justify-content: space-around;
+    
+                &-item {
+                    margin: 1px 15px;
+                    padding: 0;
+                    display: flex;
+                    text-decoration: none;
+                    color: #23A6F0;
+                    font-size: 15px;
+                    font-weight: 500;
+    
+                    &-icon {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    &-number {
+                        margin: 0;
+                        padding: 1px 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// --------------- main ------------------
+.main {
+    width: 100%;
+    margin-top: 113px;
+    padding: 0;
+
+    // -----------  up section ----------------
+    &_up {
+        width: 100%;
+        height: 700px;
+        background-image: url('../assets/shop-hero-1-product-slide-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        align-items: center;
+
+        
+        // ----- left right icon------
+        &-left {
+            position: absolute;
+            left: 30px;
+            top: 390px;
+        }
+        &-right {
+            position: absolute;
+            right: 30px;
+            top: 390px;
+        }
+        //  ------- lines -------------
+        &-line {
+            position: absolute;
+            top: 770px;
+            left: 46%;
+            display: flex;
+
+            &-left {
+                width: 62px;
+                height: 5px;
+                background-color: #ffff;
+            }
+
+            &-right {
+                width: 62px;
+                height: 5px;
+                margin-left: 2px;
+                background-color: #ffffff84;
+            }
+        }
+
+        // -------- center -------------
+        &-center {
+            width: 72.5%;
+            margin: 0 auto;
+
+            &-date {
+                margin: 20px 0;
+                font-size: 16px;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            &-head {
+                padding: 0;
+                margin: 20px 0;
+                font-size: 58px;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            &-paragraph {
+                max-width: 380px;
+                font-size: 20px;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            &-button {
+                color: #fff;
+                background-color: #2DC071;
+                padding: 15px 40px;
+                margin-top: 20px;
+                border: none;
+                font-size: 24px;
+                font-weight: 700;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // -----------  down section ----------------
+    &_down {
+        width: 100%;
+        text-align: center;
+
+        &-head {
+            margin-top: 70px;
+        }
+
+        &-container {
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+
+
+            &-left {
+                width: 35%;
+                height: 500px;
+                background-image: url('../assets/men.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+                margin: 0;
+
+
+                &-info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: 48px;
+                    background-color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 700;
+                    position: relative;
+                    top: 426px;
+                    left: 31px;
+                }
+            }
+
+            &-right {
+                width: 35%;
+                height: 500px;
+                display: flex;
+                margin: 0;
+
+                &-woman {
+                    width: 50%;
+                    height: 500px;
+                    margin: 0 0 0 15px;
+                    background-image: url('../assets/women.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: top;
+
+                    &-info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 136px;
+                        height: 48px;
+                        background-color: #ffffff;
+                        font-size: 16px;
+                        font-weight: 700;
+                        position: relative;
+                        top: 426px;
+                        left: 21px;
+                    }
+                }
+
+                &-acceskids {
+                    width: 50%;
+                    height: 500px;
+
+                    &-up {
+                        width: 100%;
+                        height: 245px;
+                        margin: 0 0 10px 15px;
+                        background-image: url('../assets/accessories.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: top;
+
+                        &-info {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 170px;
+                            height: 48px;
+                            background-color: #ffffff;
+                            font-size: 16px;
+                            font-weight: 700;
+                            position: relative;
+                            top: 171px;
+                            left: 11px;
+                        }
+                    }
+    
+                    &-down {
+                        width: 100%;
+                        height: 245px;
+                        margin: 10px 0 0 15px;
+                        background-image: url('../assets/kids.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: top;
+
+                        &-info {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 120px;
+                            height: 48px;
+                            background-color: #ffffff;
+                            font-size: 16px;
+                            font-weight: 700;
+                            position: relative;
+                            top: 171px;
+                            left: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
